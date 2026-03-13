@@ -3,9 +3,6 @@
   body { font-size: 48px; }
 </style>
 <script>
-const ts = Number(new URLSearchParams(location.search).get("t"));
-setInterval(() => {
-  document.body.textContent = Date.now() - ts;
-}, 10);
+  document.body.textContent = Date.now() - Number(new URLSearchParams(location.search).get("t"));
 </script>
 
