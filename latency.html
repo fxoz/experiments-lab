@@ -2,7 +2,10 @@
 <style>
   body { font-size: 48px; }
 </style>
-<script>
-  document.body.textContent = Date.now() - Number(new URLSearchParams(location.search).get("t"));
-</script>
 
+<body>
+<script>
+document.body.textContent =
+  Date.now() - Number(new URLSearchParams(location.search).get("t"));
+</script>
+</body>
